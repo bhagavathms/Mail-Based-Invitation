@@ -27,3 +27,23 @@ The script reads attendee data (name, email, and status) from a Google Sheet and
 This repository contains only the script and sample data.  
 The actual Google Sheet and live Apps Script project run within Google Workspace.
 
+
+## Attendees CSV Format
+
+The script reads attendee data from a Google Sheet (exported here as `attendees.csv` for reference).
+
+### Expected Columns
+
+| Column | Name         | Description                                   |
+|-------:|--------------|-----------------------------------------------|
+| A      | Name         | Attendee name                                 |
+| B      | Email        | Attendee email address                        |
+| C      | Status       | "Yes" to send invite, updated to "Sent" after |
+
+### Sample Data (Dummy)
+
+```csv
+Name,Email,Status
+Alice Example,alice@example.com,Yes
+Bob Sample,bob@example.com,Yes
+Charlie Demo,charlie@example.com,Sent
